@@ -1,21 +1,23 @@
+server:
+  port: 8090
 spring:
-    profiles:
-        active: local
-    datasource:
-        url: jdbc:postgresql://localhost:5432/bc_case_study
-        username: bootcamp
-        password: bootcamp123
-        driver-class-name: org.postgresql.Driver
-    jpa:
-        open-in-view: false
-        database-platform: org.hibernate.dialect.PostgreSQLDialect
-        generate-ddl: true # for development only
-        properties:
-            hibernate:
-                default_schema: public
+  profiles:
+    active: local
+  datasource:
+    url: jdbc:postgresql://efriandika.com:5432/bc_case_study
+    username: bootcamp
+    password: bootcamp123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true # for development only
+    properties:
+      hibernate:
+        default_schema: public
 
 springdoc:
-    api-docs:
-        path: /api-docs
-    swagger-ui:
-        path: /api-docs-ui
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /api-docs-ui

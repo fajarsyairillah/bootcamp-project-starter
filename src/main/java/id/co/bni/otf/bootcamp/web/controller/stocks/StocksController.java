@@ -62,4 +62,5 @@ public class StocksController {
         stocksService.delete(id);
         return HttpStatus.NO_CONTENT;
     }
+
 }
